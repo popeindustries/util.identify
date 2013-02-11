@@ -1,0 +1,13 @@
+{
+	"name": "util.object",
+	"description": "A collection of Object utility functions",
+	"version": "0.0.1",
+	"author": "popeindustries <alex@pope-industries.com>",
+	"dependencies": {
+	},
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/popeindustries/util.object.git"
+	}
+}
