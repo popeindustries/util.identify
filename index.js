@@ -19,7 +19,7 @@ exports.isArray = function(obj) {
  * @returns {Boolean}
  */
 exports.isObject = function(obj) {
-	return obj === Object(obj);
+	return obj === Object(obj) && obj.nodeType == undefined;
 };
 
 /**
@@ -88,7 +88,7 @@ exports.isBoolean = function(obj) {
  * @returns {Object}
  */
 exports.extend = function(obj) {
-	var argObjs = (2 <= arguments.length) ? Array.slice.call(arguments, 1) : []
+	var argObjs = (2 <= arguments.length) ? Array.prototype.slice.call(arguments, 1) : []
 		, argObj;
 	for (var i = 0, n = argObjs.length; i < n; i++) {
 		argObj = argObjs[i];
