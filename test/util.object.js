@@ -1,4 +1,4 @@
-/*BUILT Sun Feb 17 2013 18:56:43 GMT+0100 (CET)*/
+/*BUILT Sun Feb 17 2013 19:23:55 GMT+0100 (CET)*/
 require.register('util.object', function(module, exports, require) {
   /**
    * Test if 'obj' is an Array
@@ -21,7 +21,7 @@ require.register('util.object', function(module, exports, require) {
    * @returns {Boolean}
    */
   exports.isObject = function(obj) {
-  	return obj === Object(obj);
+  	return obj === Object(obj) && obj.nodeType == undefined;
   };
   
   /**
@@ -90,7 +90,7 @@ require.register('util.object', function(module, exports, require) {
    * @returns {Object}
    */
   exports.extend = function(obj) {
-  	var argObjs = (2 <= arguments.length) ? Array.slice.call(arguments, 1) : []
+  	var argObjs = (2 <= arguments.length) ? Array.prototype.slice.call(arguments, 1) : []
   		, argObj;
   	for (var i = 0, n = argObjs.length; i < n; i++) {
   		argObj = argObjs[i];
