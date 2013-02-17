@@ -1,4 +1,5 @@
 [![browser support](http://ci.testling.com/popeindustries/util.object.png)](http://ci.testling.com/popeindustries/util.object)
+
 A collection of Object utility functions.
 
 ## Usage
