@@ -1,7 +1,7 @@
 {
 	"name": "util.object",
 	"description": "A collection of Object utility functions",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "popeindustries <alex@pope-industries.com>",
 	"dependencies": {
 	},
