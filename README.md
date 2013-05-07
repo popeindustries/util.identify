@@ -1,18 +1,16 @@
-[![browser support](http://ci.testling.com/popeindustries/util.object.png)](http://ci.testling.com/popeindustries/util.object)
+[![browser support](http://ci.testling.com/popeindustries/util.identify.png)](http://ci.testling.com/popeindustries/util.identify)
 
-A collection of Object utility functions.
+A collection of Object identification functions.
 
 ## Usage
 ```javascript
-var objectUtils = require('util.object');
+var id = require('util.identify');
 
-objectUtils.isArray([]); // => true
-objectUtils.isObject({}); // => true
-objectUtils.isString(''); // => true
-objectUtils.isNumber(9); // => true
-objectUtils.isFunction(function(){}); // => true
-objectUtils.isElement(document.getElementById('myElement')); // => true
-objectUtils.isBoolean(true); // => true
-objectUtils.extend({}, {one:1}, {two:2}); // => {one:1, two:2}
-objectUtils.objectify('key', 1); // => {key:1}
+id.isArray([]); // => true
+id.isObject({}); // => true
+id.isString(''); // => true
+id.isNumber(9); // => true
+id.isFunction(function(){}); // => true
+id.isElement(document.getElementById('myElement')); // => true
+id.isBoolean(true); // => true
 ```
