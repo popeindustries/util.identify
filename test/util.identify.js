@@ -1,5 +1,4 @@
-/*BUILT Sun Feb 17 2013 19:55:52 GMT+0100 (CET)*/
-require.register('util.object', function(module, exports, require) {
+require.register('util.identify', function(module, exports, require) {
   /**
    * Test if 'obj' is an Array
    * -- from underscore.js --
@@ -81,36 +80,6 @@ require.register('util.object', function(module, exports, require) {
    */
   exports.isBoolean = function(obj) {
   	return obj === true || obj === false || Object.prototype.toString.call(obj) === '[object Boolean]';
-  };
-  
-  /**
-   * Extend an 'obj' with additional properties
-   * @param {Object} obj
-   * @param {Object} ...
-   * @returns {Object}
-   */
-  exports.extend = function(obj) {
-  	var argObjs = (2 <= arguments.length) ? Array.prototype.slice.call(arguments, 1) : []
-  		, argObj;
-  	for (var i = 0, n = argObjs.length; i < n; i++) {
-  		argObj = argObjs[i];
-  		for (var prop in argObj) {
-  			obj[prop] = argObj[prop];
-  		}
-  	}
-  	return obj;
-  };
-  
-  /**
-   * Convert a 'key' 'value' pair into an object
-   * @param {String} key
-   * @param {*} value
-   * @returns {Object}
-   */
-  exports.objectify = function(key, value) {
-  	var o = {};
-  	o[key] = value;
-  	return o;
   };
   
 });

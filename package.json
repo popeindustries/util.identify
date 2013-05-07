@@ -1,7 +1,7 @@
 {
-	"name": "util.object",
-	"description": "A collection of Object utility functions",
-	"version": "0.0.2",
+	"name": "util.identify",
+	"description": "A collection of Object identification functions",
+	"version": "0.1.0",
 	"author": "popeindustries <alex@pope-industries.com>",
 	"dependencies": {
 	},
@@ -9,16 +9,16 @@
 		"mocha": "*",
 		"expect.js": "*",
 		"buddy": "*",
-		"browser-require": "git://github.com/popeindustries/browser-require.git"
+		"simple-browser-require": "*"
 	},
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/popeindustries/util.object.git"
+		"url": "git://github.com/popeindustries/util.identify.git"
 	},
 	"testling": {
 		"harness": "mocha-bdd",
-		"files": "test/object-test.js",
+		"files": "test/identify-test.js",
 		"browsers": {
 			"ie": [7,8,9,10],
 			"firefox": [13,17],
@@ -34,7 +34,7 @@
 				"sources": ["test"],
 				"targets": [{
 					"input": "index.js",
-					"output": "test/util.object.js"
+					"output": "test/util.identify.js"
 				}]
 			}
 		}

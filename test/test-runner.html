@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>util.object - tests</title>
+	<title>util.identify - tests</title>
 	<link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
 </head>
 <body>
@@ -12,9 +12,9 @@
 		mocha.ui('bdd');
 		mocha.reporter('html');
 	</script>
-	<script src="../node_modules/browser-require/require.js"></script>
-	<script src="util.object.js"></script>
-	<script src="object-test.js"></script>
+	<script src="../node_modules/simple-browser-require/require.js"></script>
+	<script src="util.identify.js"></script>
+	<script src="identify-test.js"></script>
 	<script>
 		if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
 		else { mocha.run(); }

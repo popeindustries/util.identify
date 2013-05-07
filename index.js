@@ -80,33 +80,3 @@ exports.isElement = function(obj) {
 exports.isBoolean = function(obj) {
 	return obj === true || obj === false || Object.prototype.toString.call(obj) === '[object Boolean]';
 };
-
-/**
- * Extend an 'obj' with additional properties
- * @param {Object} obj
- * @param {Object} ...
- * @returns {Object}
- */
-exports.extend = function(obj) {
-	var argObjs = (2 <= arguments.length) ? Array.prototype.slice.call(arguments, 1) : []
-		, argObj;
-	for (var i = 0, n = argObjs.length; i < n; i++) {
-		argObj = argObjs[i];
-		for (var prop in argObj) {
-			obj[prop] = argObj[prop];
-		}
-	}
-	return obj;
-};
-
-/**
- * Convert a 'key' 'value' pair into an object
- * @param {String} key
- * @param {*} value
- * @returns {Object}
- */
-exports.objectify = function(key, value) {
-	var o = {};
-	o[key] = value;
-	return o;
-};
