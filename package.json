@@ -14,7 +14,7 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/popeindustries/util.identify.git"
+		"url": "git://github.com/thomaslein/util.identify.git"
 	},
 	"testling": {
 		"harness": "mocha-bdd",
