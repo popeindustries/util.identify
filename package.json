@@ -1,8 +1,8 @@
 {
 	"name": "util.identify",
 	"description": "A collection of Object identification functions",
-	"version": "0.1.0",
-	"author": "popeindustries <alex@pope-industries.com>",
+	"version": "0.0.2",
+	"author": "Thomas Lein <thomaslein@gmail.com>",
 	"dependencies": {
 	},
 	"devDependencies": {
