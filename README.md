@@ -1,5 +1,3 @@
-[![browser support](http://ci.testling.com/popeindustries/util.identify.png)](http://ci.testling.com/popeindustries/util.identify)
-
 A collection of Object identification functions.
 
 ## Usage
