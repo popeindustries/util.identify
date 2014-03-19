@@ -5,41 +5,10 @@
 	"author": "Thomas Lein <thomaslein@gmail.com>",
 	"dependencies": {
 	},
-	"devDependencies": {
-		"mocha": "*",
-		"expect.js": "*",
-		"buddy": "*",
-		"simple-browser-require": "*"
-	},
+	
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/thomaslein/util.identify.git"
-	},
-	"testling": {
-		"harness": "mocha-bdd",
-		"files": "test/identify-test.js",
-		"browsers": {
-			"ie": [7,8,9,10],
-			"firefox": [13,17],
-			"chrome": [20,23],
-			"safari": [5.1],
-			"iphone": [6.0],
-			"ipad": [6.0]
-		}
-	},
-	"buddy": {
-		"build": {
-			"js": {
-				"sources": ["test"],
-				"targets": [{
-					"input": "index.js",
-					"output": "test/util.identify.js"
-				}]
-			}
-		}
-	},
-	"scripts": {
-		"test": "./node_modules/.bin/buddy build && open test/test-runner.html"
 	}
 }
